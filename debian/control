@@ -11,8 +11,8 @@ Vcs-Svn: https://ddccontrol.svn.sourceforge.net/svnroot/ddccontrol
 
 Package: ddccontrol-db
 Architecture: all
-Depends: 
-Recommends: ddccontrol [i386 amd64 ia64 alpha arm armel]
+Depends: ${misc:Depends}
+Recommends: ddccontrol 
 Description: monitor database for ddccontrol
  Database of monitors used by ddccontrol.  This is mostly useless without
  ddccontrol.
