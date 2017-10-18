@@ -1,12 +1,10 @@
-This package was debianized by Roberto C. Sanchez <roberto@connexer.com> on
-Sun, 14 May 2006 22:49:27 -0400.
-
-It was downloaded from http://ddccontrol.sourceforge.net/
+Sources were downloaded from https://github.com/ddccontrol/ddccontrol-db
 
 Copyright Holders:
 
 Copyright (c) 2004-2006 Nicolas Boichat <nicolas@boichat.ch>
 Copyright (c) 2004-2006 Oleg I. Vdovikin <oleg@cs.msu.su>
+Copyright (c) 2006-2008 Roberto C. Sanchez <roberto@connexer.com>
 
 License:
 
