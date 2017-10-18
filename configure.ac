@@ -1,4 +1,4 @@
-AC_INIT([DDC/CI control tool database], [20061014],
+AC_INIT([DDC/CI control tool database], [20170716],
         [DDCControl users list <ddccontrol-users@lists.sourceforge.net>],
         [ddccontrol-db])
 AM_INIT_AUTOMAKE
@@ -6,6 +6,7 @@ AC_PROG_INSTALL
 
 AM_MAINTAINER_MODE
 
+AM_GNU_GETTEXT_VERSION([0.18.1])
 AM_GNU_GETTEXT([external])
 GETTEXT_PACKAGE=ddccontrol-db
 AC_SUBST([GETTEXT_PACKAGE])

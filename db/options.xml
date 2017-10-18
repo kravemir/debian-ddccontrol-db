@@ -11,9 +11,14 @@
 				<value id="internet" name="Internet"/>
 				<value id="game" name="Game"/>
 				<value id="sport" name="Sport"/>
+				<value id="sports" name="Sports"/>
 				<value id="entertain" name="Entertain"/>
 				<value id="custom" name="Custom"/>
-				<value id="dynamic" name="Dynamic Contrast" /> 
+				<value id="dynamic" name="Dynamic Contrast" />
+				<value id="multimedia" name="Multimedia"/>
+				<value id="movie" name="Movie"/>
+				<value id="standard" name="Standard"/>
+				<value id="nature" name="Nature"/>
 			</control>
 			<control id="superbright" type="list" name="Super Bright Mode" address="0xF9">
 				<value id="one" name="One" value="0"/>
@@ -28,29 +33,75 @@
 				<value id="low" name="Low"/>
 				<value id="auto" name="Auto"/>
 			</control>
+			<control id="fengine" type="list" name="f-Engine">
+				<value id="normal" name="Normal" />
+				<value id="user" name="User" />
+				<value id="text" name="Text" />
+				<value id="movie" name="Movie" />
+			</control>
 		</subgroup>
 <!-- Following sub group valid for LG F-Engine monitors -->
 		<subgroup name="LG F-Engine">
 			<control id="femode" type="list" name="F-Engine Mode" address="0xFC">
-                                <value id="movie" name="Movie" value="0x01"/>
-                                <value id="text" name="Text" value="0x02"/>
-                                <value id="normal" name="Normal" value="0x00"/>
-                                <value id="user" name="User defined" value="0x03"/>
-                        </control>
-                        <control id="febrightness" type="value" name="F-Engine Brightness (User defined mode only)" address="0xF1"/>
-                        <control id="feclarity" type="list" name="F-Engine ACE Clarity Mode (User defined mode only)" address="0xF2">
-                                <value id="dark" name="Dark" value="0x01"/>
-                                <value id="normal" name="Normal" value="0x00"/>
-                                <value id="light" name="Light" value="0x02"/>
-                        </control>
-                        <control id="fecolor" type="list" name="F-Engine RCM Color Mode (User defined mode only)" address="0xF3">
-                                <value id="grey" name="Grey" value="0x00"/>
-                                <value id="green" name="Green" value="0x01"/>
-                                <value id="red" name="Red" value="0x02"/>
-                                <value id="colorful" name="Colorful" value="0x03"/>
-                        </control>
+				<value id="movie" name="Movie" value="0x01"/>
+				<value id="text" name="Text" value="0x02"/>
+				<value id="normal" name="Normal" value="0x00"/>
+				<value id="user" name="User defined" value="0x03"/>
+			</control>
+			<control id="febrightness" type="value" name="F-Engine Brightness (User defined mode only)" address="0xF1"/>
+			<control id="feclarity" type="list" name="F-Engine ACE Clarity Mode (User defined mode only)" address="0xF2">
+				<value id="dark" name="Dark" value="0x01"/>
+				<value id="normal" name="Normal" value="0x00"/>
+				<value id="light" name="Light" value="0x02"/>
+			</control>
+			<control id="fecolor" type="list" name="F-Engine RCM Color Mode (User defined mode only)" address="0xF3">
+				<value id="grey" name="Grey" value="0x00"/>
+				<value id="green" name="Green" value="0x01"/>
+				<value id="red" name="Red" value="0x02"/>
+				<value id="colorful" name="Colorful" value="0x03"/>
+			</control>
 		</subgroup>
-		<subgroup name="Gamma" > 
+		<subgroup name="BenQ Strobe">
+			<control id="bsforce" type="list" name="Force Strobe" address="0x40">
+				<value id="off" name="Off" value="0x00"/>
+				<value id="on" name="On" value="0x01"/>
+			</control>
+			<control id="bslength" type="value" name="Strobe Length" address="0x41"/>
+			<control id="bsphase" type="value" name="Strobe Phase" address="0x42">
+			</control>
+		</subgroup>
+		<subgroup name="BenQ Picture">
+			<control id="bnqmode" type="list" name="Picture Mode" address="0xDC">
+				<value id="mode0" name="Standard" value="0x00"/>
+				<!-- <value id="mode1" name="Mode 0x01" value="0x01"/> -->
+				<!-- <value id="mode2" name="Mode 0x02" value="0x02"/> -->
+				<value id="mode3" name="Movie" value="0x03"/>
+				<!-- <value id="mode4" name="Mode 0x04" value="0x04"/> -->
+				<!-- <value id="mode5" name="Mode 0x05" value="0x05"/> -->
+				<!-- <value id="mode6" name="Mode 0x06" value="0x06"/> -->
+				<!-- <value id="mode7" name="Mode 0x07" value="0x07"/> -->
+				<!-- <value id="mode8" name="Mode 0x08" value="0x08"/> -->
+				<!-- <value id="mode9" name="Mode 0x09" value="0x09"/> -->
+				<!-- <value id="modeA" name="Mode 0x0A" value="0x0A"/> -->
+				<value id="modeB" name="Photo" value="0x0B"/>
+				<value id="modeC" name="sRGB" value="0x0C"/>
+				<!-- <value id="modeD" name="Mode 0x0D" value="0x0D"/> -->
+				<value id="modeE" name="Eco" value="0x0E"/>
+				<!-- <value id="modeF" name="Mode 0x0F" value="0x0F"/> -->
+				<!-- <value id="mode10" name="Mode 0x10" value="0x10"/> -->
+				<!-- <value id="mode11" name="Mode 0x11" value="0x11"/> -->
+				<!-- <value id="mode12" name="Mode 0x12" value="0x12"/> -->
+				<!-- <value id="mode13" name="Mode 0x13" value="0x13"/> -->
+				<!-- <value id="mode14" name="Mode 0x14" value="0x14"/> -->
+				<value id="mode15" name="FPS1" value="0x15"/>
+				<value id="mode16" name="FPS2" value="0x16"/>
+				<value id="mode17" name="RTS" value="0x17"/>
+				<value id="mode18" name="Gamer 1" value="0x18"/>
+				<value id="mode19" name="Gamer 2" value="0x19"/>
+				<value id="mode1A" name="Gamer 3" value="0x1A"/>
+			</control>
+		</subgroup>
+		<subgroup name="Gamma" >
 			<control id="gamma" type="list" name="Gamma" address="0xF2" >
 				<value id="-0.5" name="-0.5"/>
 				<value id="-0.3" name="-0.3"/>
@@ -102,8 +153,10 @@
 				<value id="cool6" name="Cool6"/>
 				<value id="cool7" name="Cool7"/>
 				<value id="srgb" name="sRGB"/>
+				<value id="argb" name="Adobe RGB"/>
 				<value id="4000k" name="4000K"/>
 				<value id="5000k" name="5000K"/>
+				<value id="5700k" name="5700K"/>
 				<value id="6500k" name="6500K"/>
 				<value id="7500k" name="7500K"/>
 				<value id="8200k" name="8200K"/>
@@ -118,6 +171,11 @@
 				<value id="user4" name="User 4"/>
 				<value id="easy" name="Easy"/>
 				<value id="expert" name="Expert"/>
+                <value id="movie" name="Movie"/>
+                <value id="photo" name="Photo"/>
+                <value id="eco" name="Eco"/>
+                <value id="rts1" name="RTS 1"/>
+                <value id="rts2" name="RTS 2"/>
 			</control>
 			<control id="magiccolor" type="list" name="MagicColor" address="0xF0">
 				<value id="off" name="Off"/>
@@ -155,7 +213,7 @@
 			<control id="hpincushion" type="value" name="Horizontal Pincushion" address="0x24"/>
 			<control id="hpincushionbalance" type="value" name="Horizontal Pincushion Balance" address="0x26"/>
 			<control id="vpincushion" type="value" name="Vertical Pincushion" address="0x34"/>
-			<control id="vpincushionbalance" type="value" name="Vertical Pincushion Balance" address="0x36"/>     
+			<control id="vpincushionbalance" type="value" name="Vertical Pincushion Balance" address="0x36"/>
 			<control id="cpincushion" type="value" name="Center Pincushion" address="0xE1"/>
 		</subgroup>
 		<subgroup name="Linearity">
@@ -247,16 +305,23 @@
 				<value id="portrait" name="Portrait"/>
 			</control>
 			<control id="language" type="list" name="Language select" address="0x68">
-				<value id="english" name="English"/>
-				<value id="french"  name="French"/>
-				<value id="german"  name="German"/>
-				<value id="italian" name="Italian"/>
-				<value id="russian" name="Russian"/>
-				<value id="spanish" name="Spanish"/>
-				<value id="swedish" name="Swedish"/>
-				<value id="chinese" name="Chinese"/>
-				<value id="dutch"   name="Dutch"/>
-				<value id="japanese" name="Japanese"/>
+				<value id="english"       name="English"/>
+				<value id="french"        name="Français (French)"/>
+				<value id="german"        name="Deutsch (German)"/>
+				<value id="italian"       name="Italiano (Italian)"/>
+				<value id="spanish"       name="Castellano (Spanish)"/>
+				<value id="russian"       name="Русский (Russian)"/>
+				<value id="swedish"       name="Svenska (Swedish)"/>
+				<value id="chinese_tw"    name="繁體中文 (Traditional Chinese)"/>
+				<value id="chinese"       name="简体中文 (Simplified Chinese)"/>
+				<value id="dutch"         name="Nederlands (Dutch)"/>
+				<value id="japanese"      name="日本語 (Japanese)"/>
+				<value id="polish"        name="Polski (Polish)"/>
+				<value id="czech"         name="Český (Czech)"/>
+				<value id="hungarian"     name="Magyar (Hungarian)"/>
+				<value id="romanian"      name="Română (Romanian)"/>
+				<value id="portuguese"    name="Português (Portuguese)"/>
+				<value id="serbocroatian" name="SiGC/BiH/CRO (Serbo-Croatian)"/>
 			</control>
 		</subgroup>
 		<subgroup name="Input settings">
@@ -270,6 +335,17 @@
 			<control id="inputsource" type="list" name="Input Source Select" address="0x60">
 				<value id="analog" name="Analog"/>
 				<value id="digital" name="Digital"/>
+				<value id="dp" name="DisplayPort"/>
+				<value id="dvi" name="DVI"/>
+				<value id="dvi1" name="DVI-1"/>
+				<value id="dvi2" name="DVI-2"/>
+				<value id="hdmi" name="HDMI"/>
+				<value id="hdmi1" name="HDMI-1"/>
+				<value id="hdmi2" name="HDMI-2"/>
+				<value id="vga" name="VGA"/>
+				<value id="component" name="Component"/>
+				<value id="s-video" name="S-Video"/>
+				<value id="composite" name="Composite"/>
 			</control>
 			<control id="autosource" type="list" name="Autoselect Input Source" address="0xe2">
 				<value id="auto" name="Automatic" value="0"/>
@@ -280,6 +356,7 @@
 			<control id="dpms" type="list" name="DPMS Control" address="0xd6">
 				<value id="on" name="On"/>
 				<value id="standby" name="Standby"/>
+				<value id="off" name="Off"/>
 			</control>
 			<control id="power" type="list" name="Power control" address="0xe1">
 				<value id="off" name="Off"/>
@@ -300,7 +377,11 @@
 				it seems) -->
 			<control id="powerled" type="list" name="Power LED" address="0xfd">
 				<value id="off" name="Off"/>
-				<value id="on" name="On"/>
+				<value id="on"  name="On"/>
+				<value id="1"   name="1"/>
+				<value id="2"   name="2"/>
+				<value id="3"   name="3"/>
+				<value id="4"   name="4"/>
 			</control>
 		</subgroup>
 	</group>
