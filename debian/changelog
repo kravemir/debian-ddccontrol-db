@@ -1,17 +1,18 @@
 ddccontrol-db (20170716-1) unstable; urgency=medium
 
-  * debian/compat: increased compatibility level
+  * debian/compat: increased compatibility level to 10
   * debian/control: 
     * updated homepage to GitHub
     * updated VCS URLs to GitHub
     * updated build depends to match debhelper compatibility level
+    * removed autotools-dev dependency (not needed since compatibility level 10)
   * debian/copyright: added Roberto C. Sanchez
   * debian/rules:
     * generated new using dh_make (version 2.201608)
     * modified auto-configuration to use autogen.sh
   * debian/watch: watch GitHub project releases
 
- -- Miroslav Kravec <kravec.miroslav@gmail.com>  Wed, 18 Oct 2017 13:15:13 +0200
+ -- Miroslav Kravec <kravec.miroslav@gmail.com>  Sun, 10 Dec 2017 13:07:11 +0100
 
 ddccontrol-db (20061014-4) unstable; urgency=low
 
