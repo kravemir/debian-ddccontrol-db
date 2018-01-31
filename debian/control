@@ -11,6 +11,7 @@ Vcs-Browser: https://github.com/ddccontrol/debian-ddccontrol-db
 
 Package: ddccontrol-db
 Architecture: all
+Multi-Arch: foreign
 Depends: ${misc:Depends}
 Recommends: ddccontrol
 Description: monitor database for ddccontrol
